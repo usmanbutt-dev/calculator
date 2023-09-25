@@ -1,0 +1,90 @@
+* {
+    font-family: "Roboto";
+    font-weight:bolder
+}
+
+body {
+    background-color: rgb(38, 39, 53);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.calculator input {
+    width: 350px;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 2px;
+    text-align: end;
+}
+
+.calculator input::placeholder{
+    font-size: 30px;
+    padding: 2px;
+    text-align: end;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.buttons > *{
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.clear {
+    height:45px;
+    width: 165px;
+    border-radius: 5px;
+    background-color: rgb(200, 68, 68);
+}
+
+.clear:hover {
+    background-color: rgb(215, 28, 28);
+    transform: scale(1.02);
+}
+
+.delete {
+    height: 45px;
+    width: 165px;
+    border-radius: 5px;
+    background-color: rgb(54, 109, 197);
+}
+
+.delete:hover {
+    background-color: rgb(16, 102, 239);
+    transform: scale(1.02);
+}
+
+.number {
+    height: 45px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+.number:hover {
+    background-color:darkgray;
+    transform: scale(1.02);
+}
