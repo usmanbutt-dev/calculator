@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto";
+    font-family: "Coda";
     font-weight:bolder
 }
 
@@ -25,24 +25,27 @@ body {
     align-items: center;
     border: 2px solid white;
     border-radius: 10px;
+    background-color: rgb(23, 115, 151);
 }
 
 .input {
     display: flex;
     flex-direction: column;
     width: 360px;
-    height: 100px;
+    height: 130px;
     border: 2px solid white;
     border-radius: 10px;
     background-color: whitesmoke;
     font-size: 28px;
     padding: 2px;
-    text-align: end;
+    text-align: right;
     justify-content: space-evenly;
-}
-
-.input:empty {
-    content: "0";
+    align-items: flex-end;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: 0;
 }
 
 .buttons {
