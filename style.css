@@ -11,33 +11,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .calculator {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 450px;
     width: 400px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
     align-items: center;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.calculator input {
-    width: 350px;
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
     height: 100px;
-    border-radius: 5px;
-    font-size: 30px;
-    padding: 2px;
-    text-align: end;   
-}
-
-.calculator input::placeholder{
-    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    font-size: 28px;
     padding: 2px;
     text-align: end;
+    justify-content: space-evenly;
+}
+
+.input:empty {
+    content: "0";
 }
 
 .buttons {
@@ -48,6 +53,7 @@ body {
     justify-content:center;
 }
 
+
 .buttons > *{
     font-size: 20px;
     border: 1px solid black;
@@ -57,28 +63,32 @@ body {
 .clear {
     height:45px;
     width: 165px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgb(200, 68, 68);
 }
 
 .clear:hover {
     background-color: rgb(215, 28, 28);
-    transform: scale(1.02);
 }
 
 .delete {
     height: 45px;
     width: 165px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgb(54, 109, 197);
 }
 
 .delete:hover {
     background-color: rgb(16, 102, 239);
-    transform: scale(1.02);
 }
 
 .number {
+    height: 45px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+.btn {
     height: 45px;
     width: 75px;
     border-radius: 5px;
