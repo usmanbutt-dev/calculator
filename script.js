@@ -1,7 +1,8 @@
 let numbers = document.querySelectorAll(".number");
 let operators = document.querySelectorAll(".btn"); 
 let input = document.querySelector(".second-line");
-let erase = document.querySelector("#erase")
+let erase = document.querySelector("#erase");
+let clear = document.querySelector("#clear")
 
 function deleteOne() {
     input.innerHTML = input.innerHTML.slice(0, -1); 
@@ -26,3 +27,6 @@ numbers.forEach(number => {
 });
 
 erase.addEventListener("click", deleteOne)
+clear.addEventListener("click", ()=>{
+    input.innerHTML = "";
+})
