@@ -100,3 +100,8 @@ body {
     background-color:darkgray;
     transform: scale(1.02);
 }
+
+.btn:hover {
+    background-color:darkgray;
+    transform: scale(1.02);
+}
